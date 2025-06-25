@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Abandono</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.14.0/dist/tf.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Predicción de Abandono</h1>
+
+  <label>Edad: <input type="number" id="age" value="30"></label>
+  <label>Ingresos mensuales: <input type="number" id="income" value="4500"></label>
+  <label>Años totales trabajados: <input type="number" id="totalYears" value="5"></label>
+  <label>Años en la empresa: <input type="number" id="yearsAtCompany" value="3"></label>
+
+  <label>Job Role:
+    <select id="jobRole">
+      <option>Sales Executive</option>
+      <option>Sales Representative</option>
+      <option>Research Scientist</option>
+      <option>Research Director</option>
+      <option>Manager</option>
+      <option>Manufacturing Director</option>
+      <option>Laboratory Technician</option>
+      <option>Human Resources</option>
+    </select>
+  </label>
+
+  <label>Horas extra:
+    <select id="overtime">
+      <option value="Yes">Sí</option>
+      <option value="No">No</option>
+    </select>
+  </label>
+
+  <label>Viajes de negocios:
+    <select id="businessTravel">
+      <option value="Travel_Frequently">Frecuente</option>
+      <option value="Travel_Rarely">Raro</option>
+      <option value="Non-Travel">Nunca viaja</option>
+    </select>
+  </label>
+
+  <button onclick="predecir()">Predecir</button>
+
+  <h2 id="resultado"></h2>
+  <script src="script.js"></script>
+</body>
+</html>

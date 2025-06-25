@@ -1,2 +1,2 @@
 # tensorflowjs
-Pagina web usando tensorflowJS para predecir el riesgo de abandono de un empleado
+Este proyecto utiliza un modelo de Machine Learning entrenado con Keras para predecir la probabilidad de que un empleado abandone su trabajo ("Attrition"). El modelo es exportado a TensorFlow.js para que pueda ser usado directamente en una página web sin necesidad de backend.
